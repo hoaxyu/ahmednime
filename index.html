@@ -15,7 +15,7 @@ nav{
 }
 .h0{
     font-size: 30px;
-    background-color: #333;
+    background-color: rgb(29, 29, 29);
     color: orangered;
     font-family: fantasy;
     padding: 0.4em;
@@ -30,6 +30,13 @@ button{
     color: white;
     background-color: orangered;
 }
+input{
+    font-size: 16px;
+    border-radius: 2em;
+    padding: 0.5em;
+    color: orangered;
+    background-color: white;
+}
 .cont{
     margin-left: 20%;
     margin-right: 20%;
@@ -43,15 +50,51 @@ button{
     margin-right: 20%;
     background-color: #333;
     padding: 1rem;
-    box-shadow:  5px 0px 5px rgba(90, 75, 61, 0.7), -5px 0px 5px rgba(90, 75, 61, 0.7);
+    box-shadow:  2px 0px 0px rgba(90, 75, 61, 0.7), -2px 0px 0px rgba(90, 75, 61, 0.7);
+    justify-content: left;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid white;
     
 }
+.contx{
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #333;
+    padding: 1rem;
+    box-shadow:  2px 0px 0px rgba(90, 75, 61, 0.7), -2px 0px 0px rgba(90, 75, 61, 0.7);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid white;
+    
+}
+.end{
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(29, 29, 29);
+    padding: 1rem;
+    box-shadow:  2px 0px 0px rgba(90, 75, 61, 0.7), -2px 0px 0px rgba(90, 75, 61, 0.7);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+}
+.t{
+    font-size: 40px;
+    padding: 5px;
+}
+.slash img{
+    padding: 10px;
+}
 .slash{
-    padding: 1em;
-    border-right: 5px dotted white;
+    border-right: 3px solid white;
+    margin-right: 30px;
 }
 .text{
-    text-align: right;
+    font-size: 30px;
+    
 }
 .jiren{
     display: visible;
@@ -59,8 +102,21 @@ button{
 .jiren2{
     display: none;
 }
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 @media only screen and (max-width: 1115px) and (min-width: 789px){
     .cont{
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: #333;
+    padding: 1rem;
+    box-shadow:  5px 0px 5px rgba(90, 75, 61, 0.7), -5px 0px 5px rgba(90, 75, 61, 0.7);
+}
+.contx{
     margin-left: 0%;
     margin-right: 0%;
     background-color: #333;
@@ -83,12 +139,43 @@ button{
     padding: 0;
     box-shadow:  5px 0px 5px rgba(90, 75, 61, 0.7), -5px 0px 5px rgba(90, 75, 61, 0.7);
 }
-.cont2{
+.contx{
     margin-left: 0%;
     margin-right: 0%;
     background-color: #333;
     padding: 0;
     box-shadow:  5px 0px 5px rgba(90, 75, 61, 0.7), -5px 0px 5px rgba(90, 75, 61, 0.7);
+}
+.cont2{
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: #333;
+    padding: 0;
+    box-shadow:  2px 0px 0px rgba(90, 75, 61, 0.7), -2px 0px 0px rgba(90, 75, 61, 0.7);
+    
+}
+.end{
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 10px;
+    box-shadow:  2px 0px 0px rgba(90, 75, 61, 0.7), -2px 0px 0px rgba(90, 75, 61, 0.7);
+}
+.slash img{
+    margin-left: 5px;
+    height: 80px;
+    border-radius: 50%;
+}
+.slash{
+    border-right: none;
+    
+}
+.t{
+    font-size: 23px;
+    padding: 5px;
+}
+.text{
+    font-size: 20px;
+    margin-left: 10px;
 }
     .jiren{
         display: none;
@@ -99,6 +186,9 @@ button{
     h1{
         padding: 1rem;
         
+    }
+    .img img{
+        height: 150px;
     }
 }
 </style>
@@ -132,11 +222,42 @@ button{
 </center>
 </div>
 <br><br>
-    
-
-<br>
-<br>
-<br>
+<div class="img">
+<img height="300" class="img" src="https://lh3.googleusercontent.com/proxy/tebgqUjZ6L92xa130xOgyhy29BqGdlx1Gvcm2XsDPZZRZRZVpwt1CFC23WzJQT_zcavz7ii5Gds3uFEcgUgM0aTyEkwUsVU">
+</div>
+<br><br>
+<div class="contx">
+    <div class="t">
+        Reviews From Daily Clients
+    </div>
+</div>
+    <div class="cont2">
+        <div class ="slash">
+            <img src="https://d2c7ipcroan06u.cloudfront.net/wp-content/uploads/2020/04/bill-gates-scaled-e1587958465488-696x392.jpg" height="200">
+        </div>
+        <div class="text">
+            "I love this site"
+        </div>
+    </div>
+        <div class ="cont2">
+        <div class ="slash">
+            <img src="https://img.etimg.com/thumb/width-640,height-480,imgsize-424098,resizemode-1,msid-76229432/no-silver-lining-trump-faces-voter-backlash-amid-crises.jpg" height="200">
+        </div>
+        <div class="text">
+            "Best site ever!"
+        </div>
+    </div>
+    <div class ="cont2">
+        <div class ="slash">
+            <img src="https://media-exp1.licdn.com/dms/image/C5603AQE_IQt8pVGTtg/profile-displayphoto-shrink_100_100/0?e=1596672000&v=beta&t=EgpXwY8H1V87ZTTCrSeeFEcxN5q6lAedUFKruv_Uhr8" height="200">
+        </div>
+        <div class="text">
+            "You're fired, for doing <br> an amazing Job!"
+        </div>
+    </div>
+    <div class = "end">
+        <input type="text" placeholder="Search Anime"><button>Search</button>
+    </div>
 </body>
 <script>
 
