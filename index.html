@@ -3,6 +3,10 @@
 *{
     padding: 0;
     margin: 0;
+    outline: none;
+}
+button:hover{
+    cursor: pointer;
 }
 body{
     background-color: rgb(121, 121, 121);
@@ -201,6 +205,7 @@ input{
 }
 </style>
 <head>
+    <link rel="icon" type="image/jpg" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F1151435%2Fscreenshots%2F4510128%2Fjiren-dribbble.jpg&f=1&nofb=1">
     <title>
         AHMEDNIME 
     </title>
@@ -225,7 +230,9 @@ input{
     </video>
     <br>
     <br>
-    <button onclick="Download('22a_1604371848147053.mp4')">Download</button>
+    <form method="get" action="22a_1604371848147053.mp4">
+    <button type = "submit" value="button">Download</button>
+</form>
     <br><br>
     
 </center>
@@ -242,7 +249,7 @@ input{
 </div>
     <div class="cont2">
         <div class ="slash">
-            <img src="https://d2c7ipcroan06u.cloudfront.net/wp-content/uploads/2020/04/bill-gates-scaled-e1587958465488-696x392.jpg" height="200">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn01.dailycaller.com%2Fwp-content%2Fuploads%2F2018%2F12%2FBill-Gates-Speaking.jpg&f=1&nofb=1" height="200">
         </div>
         <div class="text">
             "I love this site"
@@ -258,16 +265,27 @@ input{
     </div>
     <div class ="cont2">
         <div class ="slash">
-            <img src="https://media-exp1.licdn.com/dms/image/C5603AQE_IQt8pVGTtg/profile-displayphoto-shrink_100_100/0?e=1596672000&v=beta&t=EgpXwY8H1V87ZTTCrSeeFEcxN5q6lAedUFKruv_Uhr8" height="200">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.jakpost.net%2Fc%2F2020%2F02%2F18%2F2020_02_18_86871_1581998411._large.jpg&f=1&nofb=1" height="200">
         </div>
         <div class="text">
             "You're fired, for doing <br> an amazing Job!"
         </div>
     </div>
     <div class = "end">
-        <input type="text" placeholder="Search Anime"><button>Search</button>
+        <input type="text" id = "input" placeholder="Search Anime"><button onclick="search()">Search</button>
     </div>
 </body>
 <script>
+function search(){
+    var input = document.getElementById('input').value;
+    var ninput = input.replace(" ", "-");
+    alert(ninput);
+    window.open( "https://gogoanime.so/" + ninput + "-episode-1");
+}
 
 </script>
+<style>
+    .slash img{
+        border-radius: 100%;
+    }
+</style>
